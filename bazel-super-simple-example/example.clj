@@ -1,0 +1,2 @@
+(ns example
+  (:gen-class))
