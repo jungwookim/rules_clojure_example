@@ -1,4 +1,4 @@
-{:paths ["gen-example/src" "gen-example/resources" "simple-example"]
+{:paths ["gen-example/src" "gen-example/resources"]
 
  :deps {;; Routing
         metosin/reitit                  {:mvn/version "0.6.0"}
