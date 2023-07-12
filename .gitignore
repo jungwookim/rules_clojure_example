@@ -19,7 +19,4 @@ modules/
 .lsp/.cache/
 
 # Bazel
-bazel-bin
-bazel-out
-bazel-rules_clojure_example
-bazel-testlogs
+bazel-*
