@@ -26,54 +26,54 @@ load("@rules_jvm_external//:specs.bzl", "maven")
 maven_install(
     artifacts =
         [
-            # maven.artifact(
-            #     group = "metosin",
-            #     artifact = "reitit",
-            #     version = "0.6.0"
-            # ),
-            # maven.artifact(
-            #     group = "metosin",
-            #     artifact = "ring-http-response",
-            #     version = "0.9.3"
-            # ),
-            # maven.artifact(
-            #     group = "ring",
-            #     artifact = "ring-core",
-            #     version = "1.10.0"
-            # ),
-            # maven.artifact(
-            #     group = "ring",
-            #     artifact = "ring-defaults",
-            #     version = "0.3.3"
-            # ),
-            # maven.artifact(
-            #     group = "ch.qos.logback",
-            #     artifact = "logback-classic",
-            #     version = "1.4.4"
-            # ),
-            # maven.artifact(
-            #     group = "luminus-transit",
-            #     artifact = "luminus-transit",
-            #     version = "0.1.5",
-            #     exclusions = [
-            #         "com.cognitect:transit-clj",
-            #     ]
-            # ),
-            # maven.artifact(
-            #     group = "metosin",
-            #     artifact = "muuntaja",
-            #     version = "0.6.8"
-            # ),
-            # maven.artifact(
-            #     group = "io.github.kit-clj",
-            #     artifact = "kit-core",
-            #     version = "1.0.3"
-            # ),
-            # maven.artifact(
-            #     group = "io.github.kit-clj",
-            #     artifact = "kit-undertow",
-            #     version = "1.0.5"
-            # ),
+            maven.artifact(
+                group = "metosin",
+                artifact = "reitit",
+                version = "0.6.0"
+            ),
+            maven.artifact(
+                group = "metosin",
+                artifact = "ring-http-response",
+                version = "0.9.3"
+            ),
+            maven.artifact(
+                group = "ring",
+                artifact = "ring-core",
+                version = "1.10.0"
+            ),
+            maven.artifact(
+                group = "ring",
+                artifact = "ring-defaults",
+                version = "0.3.3"
+            ),
+            maven.artifact(
+                group = "ch.qos.logback",
+                artifact = "logback-classic",
+                version = "1.4.4"
+            ),
+            maven.artifact(
+                group = "luminus-transit",
+                artifact = "luminus-transit",
+                version = "0.1.5",
+                exclusions = [
+                    "com.cognitect:transit-clj",
+                ]
+            ),
+            maven.artifact(
+                group = "metosin",
+                artifact = "muuntaja",
+                version = "0.6.8"
+            ),
+            maven.artifact(
+                group = "io.github.kit-clj",
+                artifact = "kit-core",
+                version = "1.0.3"
+            ),
+            maven.artifact(
+                group = "io.github.kit-clj",
+                artifact = "kit-undertow",
+                version = "1.0.5"
+            ),
             maven.artifact(
                 group = "org.clojure",
                 artifact = "clojure",
@@ -108,6 +108,7 @@ maven_install(
     repositories = [
         "https://maven.google.com",
         "https://repo1.maven.org/maven2",
+        "https://clojars.org/repo/"
     ],
     version_conflict_policy = "pinned",
 )

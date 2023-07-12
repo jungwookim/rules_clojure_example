@@ -1,9 +1,9 @@
 load("@rules_clojure//:rules.bzl", "clojure_library")
 
 clojure_library(
-    name = "lib",
+    name = "libsimpleexample",
     srcs = ["example.clj"],
-    resource_strip_prefix = "bazel-simple-example",
+    resource_strip_prefix = "simple-example",
     aot = ["example"],
     deps = [
          "@maven//:org_clojure_clojure",
