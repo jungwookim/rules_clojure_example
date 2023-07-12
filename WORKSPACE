@@ -133,4 +133,11 @@ rules_clojure_deps()
 load("@rules_clojure//:setup.bzl", "rules_clojure_setup")
 rules_clojure_setup()
 
+load("@rules_clojure//rules:tools_deps.bzl", "clojure_tools_deps")
+
+clojure_tools_deps(
+  name = "deps",
+  deps_edn = "//:deps.edn",
+  aliases = ["dev", "test"])
+
 # rules_clojure section ------------------------------------
