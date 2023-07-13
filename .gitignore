@@ -15,6 +15,7 @@ modules/
 
 # clj-kondo
 .clj-kondo/.cache/
+.clj-kondo/metosin/
 .calva/output-window/
 .lsp/.cache/
 

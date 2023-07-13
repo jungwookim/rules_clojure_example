@@ -1,12 +1,29 @@
-{:paths ["gen-example/src" "gen-example/resources"]
+{:paths ["gen-example/src" "example/src/clj"]
 
- :deps {;; Routing
+ :deps {org.clojure/clojure             {:mvn/version "1.11.1"}
+
+       ;; Routing
         metosin/reitit                  {:mvn/version "0.6.0"}
-        
-        ;; Ring
+
+       ;; Ring
         metosin/ring-http-response      {:mvn/version "0.9.3"}
         ring/ring-core                  {:mvn/version "1.10.0"}
-        ring/ring-defaults              {:mvn/version "0.3.3"}}
+        ring/ring-defaults              {:mvn/version "0.3.3"}
+
+       ;; Logging
+        ch.qos.logback/logback-classic  {:mvn/version "1.4.4"}
+
+       ;; Data coercion
+        luminus-transit/luminus-transit {:mvn/version "0.1.5"
+                                         :exclusions [com.cognitect/transit-clj]}
+        metosin/muuntaja                {:mvn/version "0.6.8"}
+
+        ;; kit Libs
+        io.github.kit-clj/kit-core {:mvn/version "1.0.3"}
+        io.github.kit-clj/kit-undertow {:mvn/version "1.0.5"}
+
+        ;; OpenAI
+        net.clojars.wkok/openai-clojure {:mvn/version "0.8.0"}}
 
  :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
              "clojars" {:url "https://clojars.org/repo"}}}

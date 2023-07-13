@@ -1,0 +1,6 @@
+{:paths ["src" "resources"]
+
+ :deps {net.clojars.wkok/openai-clojure {:mvn/version "0.8.0"}}
+
+ :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
+             "clojars" {:url "https://clojars.org/repo"}}}

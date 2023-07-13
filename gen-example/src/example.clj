@@ -1,2 +1,3 @@
-(ns example)
+(ns example
+  (:require [wkok.openai-clojure.api :as api]))
 
